@@ -8,13 +8,15 @@
 
 /* Full-Screen Background - No Scrolling */
 body {
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(120deg, #0a0a0a, #2a2a2a);
+  background: linear-gradient(120deg, #1a1a1a, #333); 
   overflow: hidden; /* Prevents scrolling */
+  position: fixed; /* Fixes everything in place */
 }
 
 /* Container for text to keep everything organized */
@@ -26,7 +28,7 @@ body {
 
 /* Main Text */
 .text {
-  color: #fff;
+  color: #e0f7fa;
   font-size: 8vw;
   max-width: 100%;
   word-wrap: break-word;
@@ -36,10 +38,10 @@ body {
 
 /* Subtext (From Prince Louis) */
 .subtext {
-  color: #ffccff;
-  font-size: 4vw; /* Smaller than the main text */
+  color: #fff5ee;
+  font-size: 8vw; /* Smaller than the main text */
   margin-top: 10px;
-  text-shadow: 0 0 5px #ff99ff, 0 0 10px #ff66ff;
+  text-shadow: 0 0 5px #ff99ff, 0 0 20px #ff66ff;
   font-style: italic;
   opacity: 0.8;
 }
@@ -52,7 +54,7 @@ body {
   }
   
   .subtext {
-    font-size: 5vw; /* Slightly larger on mobile for visibility */
+    font-size: 6vw; /* Slightly larger on mobile for visibility */
   }
 }
 
