@@ -8,7 +8,6 @@
 
 /* Full-Screen Background - No Scrolling */
 body {
-  
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -16,7 +15,6 @@ body {
   text-align: center;
   background: linear-gradient(120deg, #0a0a0a, #2a2a2a);
   overflow: hidden; /* Prevents scrolling */
-  
 }
 
 /* Container for text to keep everything organized */
