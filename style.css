@@ -49,7 +49,7 @@ body {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
   .text {
-    font-size: 10vw;
+    font-size: 8vw;
     max-width: 100%;
   }
   
