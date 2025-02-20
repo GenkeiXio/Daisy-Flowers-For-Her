@@ -6,26 +6,34 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Full-Screen Background */
+/* Full-Screen Background - No Scrolling */
 body {
+  width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background: linear-gradient(120deg, #0a0a0a, #2a2a2a);
-  overflow: hidden;
-  padding: 20px; /* Prevents text from touching edges on small screens */
-
+  overflow: hidden; /* Prevents scrolling */
+  position: fixed; /* Fixes everything in place */
 }
 
-/* Responsive Text */
+/* Container for text to keep everything organized */
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Text */
 .text {
   color: #fff;
-  font-size: 8vw; /* Adjusts dynamically based on screen size */
-  max-width: 100%;
+  font-size: 8vw;
+  max-width: 80%;
   word-wrap: break-word;
   text-shadow: 0 0 10px #ff99ff, 0 0 20px #ff66ff;
+  line-height: 1.2;
 }
 
 /* Subtext (From Prince Louis) */
@@ -40,19 +48,17 @@ body {
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
+  .text {
+    font-size: 10vw;
+    max-width: 85%;
+  }
+  
   .subtext {
     font-size: 5vw; /* Slightly larger on mobile for visibility */
   }
 }
 
-/* Small Screens (Phones) */
-@media (max-width: 768px) {
-  .text {
-    font-size: 12vw;
-  }
-}
-
-/* Flower Animation */
+/* 🌸 Flower Animation */
 div {
   position: absolute;
   pointer-events: none;
